@@ -46,7 +46,12 @@ It creates a boilerplate resource module with http client
 nest g resource reservations
 ```
 
-Run the docker build command for reservations app
+Add the reservations to the docker compose file and run
 ```bash
-docker build -f apps/reservations/Dockerfile -t sleepr_reservations .
+docker compose up 
+```
+
+Create auth service using
+```bash
+nest g app auth
 ```
